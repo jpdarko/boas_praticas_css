@@ -1,0 +1,51 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+// Estilos para o bloco 'produtos'
+.produtos {
+    max-width: 640px;
+    width: 100%;
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+}
+
+// Estilos para o bloco 'produto'
+.produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+
+    // Estilos para o elemento 'imagem' dentro de 'produto'
+    &__imagem {
+        width: 100%;
+    }
+
+    // Estilos para o elemento 'nome' dentro de 'produto'
+    &__nome {
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+
+    // Estilos para o elemento 'descricao' dentro de 'produto'
+    &__descricao {
+        color: gray;
+    }
+
+    // Estilos para o modificador 'em-destaque'
+    &--destaque {
+        border: 2px solid gold;
+        padding: 8px;
+        background-color: #ffff42;
+    }
+}
+
